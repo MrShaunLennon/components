@@ -2,9 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const App = () => {
-  return <div>Hi there!</div>;
+  return (
+    <div className="ui container comments">
+      <div className="comment">
+        <a href="/" className="avatar">
+          <img alt="avatar" />
+        </a>
+        <div className="content">
+          <a href="/" className="author">
+            Shaun
+          </a>
+          <div className="metadata">
+            <span className="date">Today at 18:00pm</span>
+          </div>
+          <div className="text">Nice blog post!</div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
+
+
 ReactDOM.render(
-  <div>(<App /></div>,
+  <div><App /></div>,
   document.querySelector('#root'));
